@@ -1,0 +1,227 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Practice Page</title>
+    <style>
+   
+body {
+    margin: 0;
+    padding: 60px 80px;
+    background-image: url("https://i.pinimg.com/1200x/e9/2f/20/e92f208fe9cfcd4368b8d703008b69dc.jpg");
+    color: #eaeaea;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+     background-position: center;
+     background-size: cover;
+
+}
+
+#mainHeading {
+    font-size: 4.2rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+    border-bottom: 6px solid #040403;
+    display: inline-block;
+}
+
+#mainHeading:hover {
+    color: #ffe203;
+}
+
+
+h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.htmlPara {
+    background-color: #f4f1ec;
+    color: #111;
+    padding: 25px 30px;
+    max-width: 520px;
+    margin-bottom: 60px;
+    font-size: 1.05rem;
+    border-left: 8px solid #ffb703;
+}
+
+
+#infoPara {
+    background-color: transparent;
+    color: #000000;
+    border: 3px dashed #141013;
+    padding: 25px;
+    max-width: 480px;
+    transform: rotate(2deg);
+    margin-bottom: 70px;
+}
+
+
+hr {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-left: 3px solid #444;
+    margin: 80px 0;
+}
+
+
+pre {
+    background-color: #000;
+    color: #00ff88;
+    padding: 30px;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    max-width: 600px;
+    overflow-x: auto;
+}
+
+
+.myList {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 60px;
+    max-width: 400px;
+}
+
+.myList li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    font-style: italic;
+}
+
+
+#steps {
+    list-style-type: upper-roman;
+    margin-top: 60px;
+    padding-left: 20px;
+    max-width: 420px;
+}
+
+#steps li {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+}
+
+
+.myLink {
+    display: inline-block;
+    margin-top: 60px;
+    color: #ffb703;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.myLink:hover {
+    border-bottom: 2px solid #ffb703;
+}
+
+
+div {
+    margin-top: 80px;
+    max-width: 480px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    border-left: 4px solid #555;
+}
+
+
+span {
+    background-color: #ffb703;
+    color: #111;
+    padding: 2px 6px;
+}
+
+
+#submitBtn {
+    margin-top: 60px;
+    background-color: transparent;
+    color: #ffb703;
+    border: 3px solid #ffb703;
+    padding: 14px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+#submitBtn:hover {
+    background-color: #ffb703;
+    color: #111;
+    transform: translateX(6px);
+}
+
+
+.footerText {
+    margin-top: 120px;
+    font-size: 10px;
+    color: #555;
+}
+        
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainHeading">HTML Practice</h1>
+
+    <h3 style="color: blue;">Basic HTML Learning</h3>
+
+    <p class="htmlPara">
+        <b>HTML</b> means <strong>HyperText Markup Language</strong>.
+        It is used to create <i>web pages</i> and give them <em>structure</em>.
+    </p>
+
+    <p id="infoPara">
+        HTML is <mark>important</mark> for websites.<br>
+        Water formula is H<sub>2</sub>O and value is 5<sup>2</sup>.
+    </p>
+
+    <hr style="border: 1px solid rgb(11, 210, 255);">
+
+    <pre style="color: brown;">
+This text
+    keeps spaces
+and line breaks.
+    </pre>
+
+    <ul class="myList">
+        <li>Simple</li>
+        <li>Easy</li>
+        <li>Useful</li>
+    </ul>
+
+    <ol id="steps">
+        <li>Write HTML</li>
+        <li>Style with CSS</li>
+        <li>Add JavaScript</li>
+    </ol>
+
+    <a href="https://www.google.com" target="_blank"
+       class="myLink"
+       style="color: rgb(255, 81, 0);">
+        Open Google
+    </a>
+
+    <br><br>
+
+    <div>
+        HTML is <span style="color: blue;">important</span> language.
+    </div>
+
+    <br>
+
+    <button id="submitBtn" style="background-color: lightblue;">
+        Submit
+    </button>
+
+    <footer class="footerText" style="font-size: 10px;">
+        This is footer text
+    </footer>
+
+</body>
+</html>
