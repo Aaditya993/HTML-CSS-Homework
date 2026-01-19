@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>Border Power</title>
+
+  <style>
+    body {
+      background-image: url(https://i.pinimg.com/1200x/d9/f2/e9/d9f2e9d0bc11a75b6448ac8dd833568c.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .near {
+      background: lightcoral;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .box {
+      padding: 20px;
+      border: 30px solid black;   
+      background: lightseagreen;
+    }
+
+    .answer {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 5px solid black;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="near">Nearby Element ABOVE</div>
+
+  <div class="box">
+    <h1>Namaste</h1>
+  </div>
+
+  <div class="near">Nearby Element BELOW</div>
+
+  <p class="answer">
+    Answer 1: Does border increase the element’s visible size?
+
+Yes.
+Increasing the border thickness makes the element visually larger because the border is added outside the content and padding. As the border grows, the outer size of the element increases.
+
+⸻
+
+Answer 2: Does border affect nearby elements?
+
+Yes.
+As the border becomes thicker, nearby elements are pushed away. This happens because the border increases the total size of the element.
+
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>Inline vs Block</title>
+
+  <style>
+    body {
+      background-image: url(https://i.pinimg.com/1200x/f8/ba/b4/f8bab4f03f0c321ccaf0856ac6e2489b.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      background: lightseagreen;
+      margin: 30px;
+      padding: 30px;
+      border: 2px solid black;
+    }
+
+    .inline {
+      background: lightcoral;
+      margin: 30px;
+      padding: 30px;
+      border: 2px solid black;
+    }
+
+    
+    .inline {
+      display: inline-block;
+    }
+    
+
+    .answer {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 5px solid black;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 30px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  
+  <div class="box">
+    I am a DIV (block element)
+  </div>
+
+  
+  <span class="inline">
+    I am a SPAN (inline element)
+  </span>
+
+  <p class="answer">
+    Answer 1: Which properties behave differently?
+
+Margin-top and margin-bottom behave differently.
+They work on block elements but do not affect layout properly on inline elements. Padding works visually in both cases.
+
+⸻
+
+Answer 2: Why does inline padding affect layout but inline margin behaves inconsistently?
+
+Inline elements participate in text flow. Padding increases the clickable and visual area of inline elements, but vertical margins do not affect line spacing. This is why inline margin behaves inconsistently.
+
+⸻
+
+Answer 3: What changes when span is converted to inline-block?
+
+When span becomes inline-block, it gains block-like behavior. Margin and padding work on all sides, height and width are respected, and layout becomes predictable.
+
+  </p>
+
+</body>
+</html>

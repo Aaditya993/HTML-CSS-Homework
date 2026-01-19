@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Align Items and Padding</title>
+
+  <style>
+    body {
+      background-image: url(https://i.pinimg.com/1200x/f8/ba/b4/f8bab4f03f0c321ccaf0856ac6e2489b.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      align-items: center; /* 👈 Task focus */
+      border: 3px dashed black;
+      padding: 20px;
+      height: 250px; /* important to see centering */
+      background: rgba(255, 255, 255, 0.4);
+      gap: 20px;
+    }
+
+    .box {
+      background: lightseagreen;
+      border: 2px solid black;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .box1 {
+      padding: 35px;
+    }
+
+    .box2 {
+      padding: 3px;
+    }
+
+    .box3 {
+      padding: 46px;
+    }
+
+    .answer {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 5px solid black;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>align-items with Different Padding</h2>
+
+  <div class="container">
+    <div class="box box1">medium</div>
+    <div class="box box2">small</div>
+    <div class="box box3">Large</div>
+  </div>
+
+  <p class="answer">
+    1.  Does alignment change when padding changes?
+
+No. Alignment remains centered regardless of padding size. Flex aligns items based on their outer box dimensions, not their internal content spacing.
+
+⸻
+
+2.  Why does padding not affect centering?
+
+Padding increases the internal size of an item but does not change the reference point used by flex alignment. Flex calculates alignment using the item’s bounding box, keeping centering consistent.
+
+⸻
+
+3.  How does this improve predictable layouts?
+
+Developers can freely adjust padding for visual comfort without breaking alignment. This separation of layout and spacing results in stable, reusable, and maintainable UI components.
+  </p>
+
+</body>
+</html>

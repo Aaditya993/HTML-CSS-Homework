@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Margin Collapse Investigation</title>
+
+  <style>
+    body {
+      background-image: url(https://i.pinimg.com/1200x/f8/ba/b4/f8bab4f03f0c321ccaf0856ac6e2489b.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .box1 {
+      background: lightseagreen;
+      padding: 20px;
+      margin-bottom: 50px;
+      border: 2px solid black;
+    }
+
+    .box2 {
+      background: lightcoral;
+      padding: 20px;
+      margin-top: 30px;
+      border: 2px solid black;
+    }
+
+    .answer {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 5px solid black;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="box1">
+    <h2>Box 1</h2>
+    margin-bottom: 50px
+  </div>
+
+  <div class="box2">
+    <h2>Box 2</h2>
+    margin-top: 30px
+  </div>
+
+  <p class="answer">
+    Answer 1: What is the final space between elements when using margin?
+
+The final space between the two elements is 50px, not 80px. The larger margin overrides the smaller one.
+
+⸻
+
+Answer 2: What happens when margin is replaced with padding?
+
+When padding is used instead of margin, the spacing adds up correctly. The total space becomes 80px, because padding does not collapse.
+
+⸻
+
+Answer 3: Explain margin collapse in your own words
+
+Margin collapse happens when two vertical margins touch each other. Instead of adding together, the browser keeps only the larger margin value. This behavior occurs only with vertical margins and helps prevent excessive spacing.
+  </p>
+
+</body>
+</html>

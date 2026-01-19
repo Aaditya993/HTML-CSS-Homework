@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>Padding Inside Flex Items</title>
+
+  <style>
+    body {
+      background-image: url(https://i.pinimg.com/1200x/f8/ba/b4/f8bab4f03f0c321ccaf0856ac6e2489b.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      border: 3px dashed black;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.4);
+      margin-bottom: 30px;
+    }
+
+    .box {
+      background: lightseagreen;
+      border: 2px solid black;
+      margin: 10px;
+      padding: 30px;     
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .answer {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 5px solid black;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Flex Items with Padding</h2>
+
+  <div class="container">
+    <div class="box">Item 1</div>
+    <div class="box">Item 2</div>
+    <div class="box">Item 3</div>
+  </div>
+
+  <p class="answer">
+    1.  Does padding affect item alignment?
+
+No. Padding increases the internal space of each flex item but does not affect how items are aligned relative to each other. Flex alignment is controlled by the container, not item padding.
+
+⸻
+
+2 . Does padding affect container size?
+
+Indirectly, yes. Padding increases the size of flex items, which may increase the container’s total width or height if space is limited. However, the container itself does not automatically grow unless content forces it.
+
+⸻
+
+3.  How is this useful for UI components?
+
+Padding inside flex items creates comfortable clickable areas and visual spacing without breaking layout alignment. This is ideal for buttons, cards, navigation items, and list components where structure must remain stable.
+  </p>
+
+</body>
+</html>

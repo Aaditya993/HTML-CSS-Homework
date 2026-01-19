@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Why Flex Exists</title>
+
+  <style>
+    body {
+      background-image: url(https://i.pinimg.com/1200x/f8/ba/b4/f8bab4f03f0c321ccaf0856ac6e2489b.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      border: 3px dashed black;
+      padding: 20px;
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      background: lightseagreen;
+      margin: 10px;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+    }
+
+    
+    .container {
+      display: flex;
+    }
+    
+
+    .answer {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 5px solid black;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Without Flex</h2>
+
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <p class="answer">
+    
+  Before flex, elements stacked vertically and relied on margins for spacing and alignment. Horizontal layouts required hacks like floats or inline-block.
+
+  After applying flex, items automatically align in a row, spacing becomes predictable, and layout control moves to the parent container.
+
+  Flex solves layout problems such as horizontal alignment, equal spacing, vertical centering, and responsiveness without relying on fragile margin tricks.
+
+  </p>
+
+</body>
+</html>

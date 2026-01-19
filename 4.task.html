@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>Box Model Power</title>
+
+  <style>
+    body {
+      background-image: url(https://i.pinimg.com/1200x/d9/f2/e9/d9f2e9d0bc11a75b6448ac8dd833568c.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .near {
+      background: lightcoral;
+      padding: 70px;
+      margin: 10px 0;
+    }
+
+    .box {
+      width: 200px;              /* content width */
+      padding: 20px;             /* inside space */
+      border: 10px solid black;  /* border thickness */
+      margin: 30px;              /* outside space */
+      background: lightseagreen;
+    }
+
+    .answer {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 5px solid black;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="near">Nearby Element ABOVE</div>
+
+  <div class="box">
+    <h1>Namaste</h1>
+  </div>
+
+  <div class="near">Nearby Element BELOW</div>
+
+  <p class="answer">
+    Answer 1: What contributes to total element size?
+    •   Content: the text area
+    •   Padding: inside spacing
+    •   Border: thickness outside padding
+    •   Total visible box size: content + padding + border
+    Answer 2: What affects spacing with nearby elements?
+    •   Margin pushes other elements away
+    •   Padding and border only affect internal box size, not distance to nearby elements
+    <p class="answer">
+  Total width calculation: <br>
+  Total width = content + padding-left + padding-right + border-left + border-right <br>
+  Total width = 200 + 20 + 20 + 10 + 10 = 260px
+</p>
+  </p>
+
+</body>
+</html>
