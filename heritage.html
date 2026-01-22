@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Destinations Explorer</title>
+    <title>Heritage Sites</title>
 
     <style>
         * {
@@ -17,12 +17,12 @@
             font-family: Arial, sans-serif;
             min-height: 100vh;
             color: #fff;
-            background: url('https://i.pinimg.com/1200x/28/25/19/2825195f25a06510ece64dcef33cf8bc.jpg') no-repeat center fixed;
+            background: url('https://i.pinimg.com/736x/78/4e/37/784e371814c1a8c733ee3eb5e7afde4c.jpg') no-repeat center fixed;
             background-size: cover;
-            overflow-x: hidden;
         }
 
-        header {
+        header,
+        footer {
             text-align: center;
             padding: 30px;
             background: rgba(0, 0, 0, 0.4);
@@ -67,7 +67,6 @@
             overflow: hidden;
             text-align: center;
             transition: 0.3s;
-            cursor: pointer;
         }
 
         .card:hover {
@@ -76,18 +75,11 @@
 
         .card img {
             width: 100%;
-            display: block;
         }
 
         .card p {
             padding: 10px;
             font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
@@ -95,8 +87,8 @@
 <body>
 
     <header>
-        <h1>Travel Destinations Explorer</h1>
-        <p>Discover amazing places around the world</p>
+        <h1>Heritage Sites</h1>
+        <p>History preserved in stone</p>
     </header>
 
     <nav>
@@ -109,34 +101,28 @@
 
     <main>
         <aside>
-            <h3>Categories</h3>
+            <h3>Heritage Types</h3>
             <ul>
-                <li>Beaches</li>
-                <li>Mountains</li>
-                <li>Cities</li>
-                <li>Heritage</li>
+                <li>Monuments</li>
+                <li>Ancient Cities</li>
+                <li>World Wonders</li>
             </ul>
         </aside>
 
         <section class="gallery">
             <div class="card">
-                <img src="https://i.pinimg.com/1200x/4b/6e/a2/4b6ea29909e0dfe290a84b2856cdfe67.jpg">
-                <p>Bali — Tropical Paradise</p>
+                <img src="https://i.pinimg.com/1200x/07/1d/3b/071d3b4a5ebb658209e103bcb56a4fae.jpg">
+                <p>Taj Mahal — India</p>
             </div>
 
             <div class="card">
-                <img src="https://i.pinimg.com/1200x/e0/13/c1/e013c126176768d6ef5c987dcdcf0882.jpg">
-                <p>Ladakh — High Passes</p>
+                <img src="https://i.pinimg.com/736x/67/71/be/6771bec00b3f69cf5395c3024e56cc77.jpg">
+                <p>Colosseum — Rome</p>
             </div>
 
             <div class="card">
-                <img src="https://i.pinimg.com/736x/e4/97/69/e49769cd30c5515f5cdef8ad489a2248.jpg">
-                <p>Paris — City of Romance</p>
-            </div>
-
-            <div class="card">
-                <img src="https://i.pinimg.com/1200x/45/66/59/456659310a7277aac0deff5f5a8ae8da.jpg">
-                <p>Rome — Eternal City</p>
+                <img src="https://i.pinimg.com/1200x/f3/bf/0f/f3bf0fa68a953acc4fe0307e61373950.jpg">
+                <p>Petra -- jordan</p>
             </div>
         </section>
     </main>
